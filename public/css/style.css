@@ -1,0 +1,48 @@
+body{
+  background-image: url("https://images2.alphacoders.com/261/26102.jpg");
+  margin: 0px auto;
+  text-align: center;
+  font-family: arial;
+  color: white;
+
+}
+#container{
+  border: 4px solid red;
+}
+
+a{
+  color: white;
+  margin: 50px;
+}
+a:hover{
+  background: brown;
+}
+
+h1{
+  text-decoration: underline;
+}
+
+nav{
+  margin-top: 30px;
+}
+#booklist{
+  font-weight: bold;
+}
+
+.bookbuttons{
+
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: brown;
+}
+.bookbuttons:hover{
+  background: gray;
+}
+
+
+
+
+
+
+
