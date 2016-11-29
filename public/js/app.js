@@ -32,5 +32,6 @@
   }
 
 
-})()
+})() // ends IIFEE
+
 console.log('app.js');

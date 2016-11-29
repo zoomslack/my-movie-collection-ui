@@ -5,13 +5,14 @@
 
  function BookController($http, $state) {
   var self = this;
-  var rootUrl = "http://localhost:3000";
+  //var rootUrl = "http://localhost:3000";
+  var rootUrl = "https://aqueous-depths-50833.herokuapp.com"
 
+  // functions relating back to controller
   self.getAllBooks = getAllBooks;
   self.createTask = createTask;
   self.deleteOneTask = deleteOneTask;
   self.update = update;
-  //self.updateTask = updateTask;
 
   // invoke funciton to get books here
   getAllBooks()
@@ -71,6 +72,7 @@
 
     } // ends delete function()
 
+    // UPDATE BOOKS
     function update (book){
         $http({
         url: `${rootUrl}/api/books/${book.id}`,

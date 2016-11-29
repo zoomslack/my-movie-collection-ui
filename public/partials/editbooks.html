@@ -3,17 +3,20 @@
   <div ng-repeat="task in book.bookList" >
 
     Title: {{task.title}}<br> Author: {{ task.author }}<br> Publisher: {{task.publisher}}<br>
+
     <button class="bookbuttons" ng-click="book.deleteOneTask($index)">remove</button>
+
     <form ng-submit="book.update(task)">
 
-                    Title: <input type="text" placeholder="{{task.title}}" ng-model="task.title"><br>
+      Title: <input type="text" placeholder="{{task.title}}" ng-model="task.title"><br>
 
-                    Title: <input type="text" placeholder="{{task.author}}" ng-model="task.author"><br>
+      Title: <input type="text" placeholder="{{task.author}}" ng-model="task.author"><br>
 
-                    Publisher: <input type="text" placeholder="{{task.publisher}}" ng-model="task.publisher"><br>
+      Publisher: <input type="text" placeholder="{{task.publisher}}" ng-model="task.publisher"><br>
 
-                    <button type="submit" class="bookbuttons">update book</button>
-      </form>
+      <button type="submit" class="bookbuttons">update book</button>
+    </form>
+
   </div>
 
 </div>

@@ -1,23 +1,32 @@
 
 <div>
+
   <h4>Add New Book</h4>
+
   <div id="formwrap">
+
     <form ng-submit="book.createTask(book.detail)">
 
       <div>
         <label for="title">title</label>
         <input type="text" ng-model="book.detail.title" required>
       </div><br>
+
       <div>
         <label for="description">author</label>
         <input type="textarea" ng-model="book.detail.author" required>
       </div><br>
+
       <div>
         <label for="date_due">publisher</label>
         <input type="textarea" ng-model="book.detail.publisher" required>
         <!--<input type="date" ng-model="api.detail.date_due" required>-->
       </div><br>
+
     <button type="submit" class="bookbuttons">add book </button><span></span>
+
     </form>
+
   </div>
+
 </div>
